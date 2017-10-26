@@ -63,6 +63,7 @@ Match {{ match["Condition"] }}
 {{       render_option("PubkeyAuthentication",match["PubkeyAuthentication"],true) -}}
 {{       render_option("RhostsRSAAuthentication",match["RhostsRSAAuthentication"],true) -}}
 {{       render_option("RSAAuthentication",match["RSAAuthentication"],true) -}}
+{{       render_option("StreamLocalBindUnlink",match["StreamLocalBindUnlink"],true) -}}
 {{       render_option("X11DisplayOffset",match["X11DisplayOffset"],true) -}}
 {{       render_option("X11Forwarding",match["X11Forwarding"],true) -}}
 {{       render_option("X11UseLocalHost",match["X11UseLocalHost"],true) -}}
@@ -140,6 +141,7 @@ Match {{ match["Condition"] }}
 {{ body_option("RevokedKeys",sshd_RevokedKeys) -}}
 {{ body_option("RhostsRSAAuthentication",sshd_RhostsRSAAuthentication) -}}
 {{ body_option("ServerKeyBits",sshd_ServerKeyBits) -}}
+{{ body_option("StreamLocalBindUnlink",sshd_StreamLocalBindUnlink) -}}
 {{ body_option("StrictModes",sshd_StrictModes) -}}
 {{ body_option("Subsystem",sshd_Subsystem) -}}
 {{ body_option("SyslogFacility",sshd_SyslogFacility) -}}
